@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mood:  rgb(62, 84, 105);
+    --light:  whitesmoke;
+}
+
+body {
+    color: var(--light);
+
+    font-family: monospace, Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin: 1px;
+    background-image: url("../images/pexels-scott-webb-593158.jpg");
+    background-size:cover;
+
+}
+
+
+h1 {    
+    font-size: 5rem;
+    height: 25vh;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    white-space: nowrap;
+    font-size: 1.5rem;
+}
+
+.navlink  a {
+    color: var(--light);
+    background-color: solid transparent;
+    transition: 1s;
+}
+
+.navlink  a:link {
+    color: var(--light);
+    text-decoration: none;
+}
+
+.navlink  a:visited {
+    color: var(--light);
+    text-decoration: none;
+}
+
+.navlink  a:hover {
+    background-color: var(--light);
+    color: var(--mood);
+}
+
+.navlink  a:active {
+    background-color: var(--light);
+    color: var(--mood);
+}
+
+.setting {
+    margin: 1px;
+    background-image: linear-gradient(
+        #656f79, rgb(63, 42, 75), rgb(133, 56, 113))
+}
+
+
+.cards { 
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+    margin-left: 1px;
+    padding-top: 5vh;
+}
+
+main {
+    padding-left: 22%;
+    padding-right: 22%;
+}
+
+.card {
+    min-width: 210px;
+    margin: 2rem;
+    background-color: var(--light);
+    color: var(--mood);
+    box-shadow: 10px 10px 15px rgb(30, 27, 31);
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 15px;
+    flex: 1 1 0;
+}
+
+.card img {
+    min-height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.cards h3 {
+    padding-left: 1rem;
+}
+
+.cards p {
+    padding-left: 2rem;
+    padding-bottom: 4px;
+}
+
+#card1 {
+    min-width: 60vw;
+}
+
+
+.cards a:link {
+    text-decoration: none;
+}
+
+.cards a:visited {
+    text-decoration: underline;
+    color: none;
+}
+
+.card * {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+}
+
+/* Needed to give cards the hover overlay effect*/
+.card::before,
+.card::after {
+    background-color: rgba(144, 168, 211, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 15px;
+    content: '';
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+}
+
+.card:hover::before,
+.card:hover::after {
+  transform: scale(1);
+  opacity: 50%;
+}
+
+#portfolio {
+    display: block;
+    text-align: center;
+    letter-spacing: 1.1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--light);
+}
+
+
+/* About-me and Contact sections*/
+
+h4 {
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 5vh;
+    border: var(--light);
+}
+
+#about-me img {
+    display: block;
+    max-width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#about-me {
+    text-align: center;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid var(--light);
+}
+
+#about-me p {
+    display: block;
+    background-color: #1a1a1a;
+    padding: 5%;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+
+#contact ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 10%;
+    margin: 0;
+}
+
+#contact img {
+    max-width: 30%;
+    min-width: 50px;
+}
+
+
+footer {
+    font-size: 26px;
+    text-align: center;
+    color: var(--mood);
+    padding: 10px;
+    background-image: url("../images/pexels-scott-webb-593158\ -\ flipped.jpg");
+    background-size: cover;
+}
+
+@media screen and (max-width: 798px) {
+    h1 {
+        padding: 0;
+        padding-bottom: 30px;
+        padding-left: 10%;
+        transition: 1s ease;
+        transform: translate(center);
+    }
+
+}
+
+@media screen and (min-width: 799px) {
+    h1 {
+
+        transition: 1s ease;
+        transform: translate(center);
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    #portfolio {
+        letter-spacing: 0.15rem;
+        transition: 1s ease;
+    }
+}
+
+@media screen and (min-width: 761px) {
+    #portfolio {
+        letter-spacing: 1.1rem;
+        transition: 1s ease;
+    }
+}
