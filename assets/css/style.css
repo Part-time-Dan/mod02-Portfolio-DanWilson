@@ -21,7 +21,7 @@ header {
 
 h1 {    
     font-size: 5rem;
-    height: 25vh;
+    height: 21vh;
     padding-left: 20px;
     padding-top: 30px;
 }
@@ -207,11 +207,11 @@ h4 {
     max-width: 30%;
     min-width: 50px;
     border-radius: 10px;
+    transition: all 0.5s ease;
 }
 
 /*icon glow*/
 #contact img:hover {
-    transition: all 0.5s ease-in-out;
     box-shadow: 0 0 10px 5px var(--light);
 }
 
@@ -241,9 +241,23 @@ footer a {
 }
 @media screen and (min-width: 799px) {
     h1 {
-
         transition: 1s ease;
         transform: translate(center);
+    }
+}
+@media screen and (max-height: 718px) {
+    nav ul {
+        display: block;
+        text-align: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .navlink  a {
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 }
 
