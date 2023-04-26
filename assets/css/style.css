@@ -10,17 +10,14 @@
 
 body {
     color: var(--light);
-
-    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace, Verdana, Arial, Helvetica, sans-serif;
 }
 
 header {
     margin: 1px;
     background-image: url("../images/pexels-scott-webb-593158.jpg");
     background-size:cover;
-
 }
-
 
 h1 {    
     font-size: 5rem;
@@ -37,10 +34,15 @@ nav ul {
     font-size: 1.5rem;
 }
 
+/*nav links hover fade transition effects*/
 .navlink  a {
     color: var(--light);
     background-color: solid transparent;
     transition: 1s;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .navlink  a:link {
@@ -68,7 +70,6 @@ nav ul {
     background-image: linear-gradient(
         #656f79, rgb(63, 42, 75), rgb(133, 56, 113))
 }
-
 
 .cards { 
     display: flex;
@@ -104,7 +105,8 @@ main {
     border-top-left-radius: 15px;
 }
 
-.cards h3 {
+.cards h2 {
+    font-size: 1.3rem;
     padding-left: 1rem;
 }
 
@@ -117,7 +119,6 @@ main {
     min-width: 60vw;
 }
 
-
 .cards a:link {
     text-decoration: none;
 }
@@ -127,12 +128,13 @@ main {
     color: none;
 }
 
+
+/* Card hover overlay effects*/
 .card * {
     box-sizing: border-box;
     transition: all 0.45s ease;
 }
 
-/* Needed to give cards the hover overlay effect*/
 .card::before,
 .card::after {
     background-color: rgba(144, 168, 211, 0.5);
@@ -162,9 +164,7 @@ main {
     border-bottom: 1px solid var(--light);
 }
 
-
 /* About-me and Contact sections*/
-
 h4 {
     font-size: 1.6rem;
     font-weight: 100;
@@ -206,8 +206,14 @@ h4 {
 #contact img {
     max-width: 30%;
     min-width: 50px;
+    border-radius: 10px;
 }
 
+/*icon glow*/
+#contact img:hover {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 10px 5px var(--light);
+}
 
 footer {
     font-size: 26px;
@@ -218,6 +224,12 @@ footer {
     background-size: cover;
 }
 
+/*Modified border radius footer nav link hover*/
+footer a {
+    border-radius: 5px;
+}
+
+/*Header responsive transform position effect*/
 @media screen and (max-width: 798px) {
     h1 {
         padding: 0;
@@ -226,25 +238,22 @@ footer {
         transition: 1s ease;
         transform: translate(center);
     }
-
 }
-
 @media screen and (min-width: 799px) {
     h1 {
 
         transition: 1s ease;
         transform: translate(center);
     }
-
 }
 
+/* #portfolio squish transition effect*/
 @media screen and (max-width: 760px) {
     #portfolio {
         letter-spacing: 0.15rem;
         transition: 1s ease;
     }
 }
-
 @media screen and (min-width: 761px) {
     #portfolio {
         letter-spacing: 1.1rem;

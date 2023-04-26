@@ -5,128 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dan Wilson Portfolio</title>
-    <!--Comment out normalize
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
         <h1 id="name">Dan Wilson</h1>
-
         <nav>
             <ul class="navlink">
-
                 <li id="option1">
-                    <a href="#portfolio">Portfolio</a>
+                    <!--Changed position of #portfolio for better visual flow. Link to #card1 so scroll doesn't jump to #portfolio and skip over work-->
+                    <a href="#card1">Portfolio</a>
                 </li>
-
                 <li id="option2">
                     <a href="#about-me">About Me</a>
                 </li>
-
                 <li id="option3">
                     <a href="#contact">Contact</a>
                 </li>
-
             </ul>
         </nav>
     </header>
-
-
+    <!--div background gradient for main body-->
     <div class="setting">
 
-    <main>
-       
+    <main>       
         <section class="cards">
-
-            <a href="https://part-time-dan.github.io/mod01-chal-DanWilson/" style="cursor: pointer;" id="card1" class="card">
-
+            <a href="https://part-time-dan.github.io/mod01-chal-DanWilson/" style="cursor: pointer;" target="_blank" rel="noopener noreferrer" id="card1" class="card">
                 <img src="assets/images/pexels-negative-space-97077.jpg" alt="code displayed on a screen altered by camera lense distortion">
-
-                <h3>Project 1</h3>
-                <p>Code Refactor for Accessibility</p>
-
+                <h2>Code Refactor</h2>
+                <p>Update existing code with accessibility features</p>
             </a>
-
-            <div id="card2" class="card">
-
+            <a href="https://part-time-dan.github.io/prework-study-guide/" style="cursor: pointer;" target="_blank" rel="noopener noreferrer" id="card2" class="card">
                 <img src="assets/images/pexels-johannes-plenio-1477835.jpg" alt="placeholder image of some spider webs">
-
-                <h3>Project 2</h3>
-                <p>Project forthcoming</p>
-
-            </div>
-
+                <h2>Pre-work Guide</h2>
+                <p>Learn basic web development</p>
+            </a>
+            <!--Links inactive. No other available work at this time-->
             <div id="card3" class="card">
-
                 <img src="assets/images/pexels-pixabay-276218cropped.jpg" alt="placeholder image of some spider webs">
-
-                <h3>Project 3</h3>
-                <p>Project forthcoming</p>
-
+                <h2>Project 3</h2>
+                <p>Projects forthcoming</p>
             </div>
-
             <div id="card4" class="card">
-
                 <img src="assets/images/pexels-pixabay-276223cropped.jpg" alt="placeholder image of some spider webs">
-
-                <h3>Project 4</h3>
-                <p>Project forthcoming</p>
-
+                <h2>Project 4</h2>
+                <p>Projects forthcoming</p>
             </div>
-
         </section>
-
         
         <section>
-
-            <h4 id="portfolio">^ PORTFOLIO ^</h4>
-
+            <h3 id="portfolio">^ PORTFOLIO ^</h3>
         </section>
-
+        
         <section id="about-me" class="content">
             
-            <h4>About Me</h4>
-            
+            <h4>About Me</h4>            
             <img src="assets/images/pngegg.png" alt="avatar icon representing the developer of this webpage">
-
-            <p>Hi! I'm a bootcamp student and aspiring web developer based in Salt Lake City, Utah, USA. I currently work full-time for a medical device manufacturer while I study coding part-time. In my free time I enjoy cooking, playing videogames, and keeping up on new & shiny PC parts I can't afford for the next rig I hope to build.</p>
-
+            <p>Hi! I'm a bootcamp student and aspiring web developer based in Salt Lake City, Utah. I currently work full-time for a medical device manufacturer while I study coding part-time. In my free time I enjoy cooking, playing videogames, and keeping up on new & shiny PC parts I can't afford for the next rig I hope to build.</p>
         </section>
 
         <section id="contact" class="content">
 
             <h4>Find Me Here</h4>
-
             <ul>
-
                 <li>
                     <a href="https://www.linkedin.com/in/daniel-wilson-98675bb6/" target="_blank" rel="noopener noreferrer"><img src="assets/images/iconmonstr-linkedin-3.svg" alt="linkedin icon"></a>
                 </li>
-
                 <li>
                     <a href="https://github.com/Part-time-Dan" target="_blank" rel="noopener noreferrer"><img src="assets/images/iconmonstr-github-3.svg" alt="github cat icon"></a>
                 </li>
-
                 <li>
                     <a href="mailto:danielwilson.web@gmail.com"><img src="assets/images/iconmonstr-gmail-3.svg" alt="envelope icon"></a>
                 </li>
-
             </ul>
-
         </section>
-
     </div>
-
+    <!--div end background gradient container-->
     </main>
-
     <footer class="navlink">
         <h5>
             <a href="#name">Back to top</a>
         </h5>
-    </footer>
-  
+    </footer>  
 </body>
 
 </html>
