@@ -15,6 +15,7 @@ body {
 
 header {
     margin: 1px;
+    margin-bottom: 2px;
     background-image: url("../images/pexels-scott-webb-593158.jpg");
     background-size:cover;
 }
@@ -216,6 +217,8 @@ h4 {
 }
 
 footer {
+    margin: 1px;
+    margin-top: 2px;
     font-size: 26px;
     text-align: center;
     color: var(--mood);
@@ -264,7 +267,7 @@ footer a {
 /* #portfolio squish transition effect*/
 @media screen and (max-width: 760px) {
     #portfolio {
-        letter-spacing: 0.15rem;
+        letter-spacing: 0rem;
         transition: 1s ease;
     }
 }
